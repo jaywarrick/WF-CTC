@@ -1,0 +1,19 @@
+@relation Workflow-Workflow
+
+@attribute 'Function Name' {'CTC Single Cell Colocalization'}
+@attribute 'Info Type' {__Inputs__,__Outputs__,__Parameters__}
+@attribute Key {0,'Artificial BG Level','Color Dim Name','Image To Quantify','Mask Image',Maxima,'Median Filter Radius','Segmented Image','Window Offset'}
+@attribute 'Workflow Index' {0}
+@attribute Metadata {Value}
+@attribute Value string
+
+@data
+'CTC Single Cell Colocalization',__Inputs__,'Image To Quantify',0,Value,'Image,FINAL,0'
+'CTC Single Cell Colocalization',__Inputs__,'Mask Image',0,Value,'Image,THRESH Color 2,0'
+'CTC Single Cell Colocalization',__Inputs__,Maxima,0,Value,'Roi,Maxima,0'
+'CTC Single Cell Colocalization',__Inputs__,'Segmented Image',0,Value,'Image,Segmented Image,0'
+'CTC Single Cell Colocalization',__Outputs__,0,0,Value,'File,Colocalization,0'
+'CTC Single Cell Colocalization',__Parameters__,'Artificial BG Level',0,Value,100
+'CTC Single Cell Colocalization',__Parameters__,'Color Dim Name',0,Value,Color
+'CTC Single Cell Colocalization',__Parameters__,'Median Filter Radius',0,Value,2
+'CTC Single Cell Colocalization',__Parameters__,'Window Offset',0,Value,''
